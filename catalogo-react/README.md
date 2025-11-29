@@ -1,40 +1,42 @@
-Projeto Lista de Livros
+📚 Catálogo de Livros — React (Resumo)
+Projeto da 2ª unidade, baseado no catálogo da 1ª unidade, agora com React Router, tema claro/escuro, página de detalhes e layout fixo.
 
-Funcionalidades
+🚀 Funcionalidades
+Listar, adicionar e remover livros
+Busca por título/autor
+Contador de total e filtrados
+Tema claro/escuro (salvo no LocalStorage)
 
--   Carregamento de livros via fetch a partir de books.json
--   Filtro de busca por título ou autor (case-insensitive)
--   Campo de busca com foco automático
--   Tema claro/escuro usando Context API
--   Persistência de tema e busca no localStorage
--   Adição e remoção de livros
--   Contadores atualizados em tempo real
--   Mensagens de carregamento, erro e ausência de resultados
+Rotas:
+/ → Home
+/catalogo → Catálogo
+/livro/:id → Detalhes (URL dinâmica)
+Página de detalhes com botão de voltar
+Header e footer fixos entre as páginas
 
-Como Rodar
+🛠 Tecnologias
+React
+React Router DOM
+Context API
+Hooks (useState, useEffect, useParams, useLocalStorage)
+Vite
 
-1.  Executar: npm install
-2.  Iniciar o projeto: npm run dev
-3.  Acessar em: http://localhost:5173
+▶ Como rodar
+npm install
+npm run dev
 
-Estrutura do Projeto
+Acesse:
+http://localhost:5173
 
--   src/components
--   src/hooks
--   src/context
--   src/pages
--   public/books.json
-
-Tecnologias
-
--   React com Vite
--   Context API
--   Hooks personalizados
--   CSS puro
+📂 Pastas principais
+components/ → Componentes (header, busca, etc.)
+pages/ → Telas (Catálogo, Home, Detalhes)
+layouts/ → Layout fixo
+context/ → Tema claro/escuro
+hooks/ → LocalStorage
 
  Integrantes
--   Arnaldo José Henriques de Souza - 01702248
--   Gustavo Lopes Torres - 01655124
--   Marcos Antônio Cruz Palmeira - 01688072
--   Pedro Moreno Vieira - 01702265
--   Sabrina Araújo de lemos - 01700691
+  Arnaldo José Henriques de Souza - 01702248
+  Gustavo Lopes Torres - 01655124   Marcos Antônio Cruz Palmeira - 01688072
+  Pedro Moreno Vieira - 01702265
+  Sabrina Araújo de lemos - 01700691
