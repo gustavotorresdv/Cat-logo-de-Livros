@@ -17,13 +17,13 @@ DGG Flowers*/
 /* TEMAS */
 
 
-/* Tema Claro — Azul de viado */
+/* Tema Claro — Azul */
 .app.light {
   background: #e7f0ff;
   color: #0f1a2a;
 }
 
-/* Tema Escuro — Roxo escuro FODA PRA KRLLLLL */
+/* Tema Escuro — Roxo escuro */
 .app.dark {
   background: #1a1026;
   color: #f1eaff;
@@ -159,6 +159,16 @@ header h1 {
   gap: 12px;
 }
 
+/* TEMA CLARO LISTA*/
+.app.light .book-item a {
+  color: #000 ;
+}
+
+/* TEMA ESCURO LISTA*/
+.app.dark .book-item a {
+  color: #fff ;
+}
+
 /* Card do livro */
 .book-item {
   background: #ffffff;
@@ -261,6 +271,3 @@ header h1 {
   background: #4e3fc4;
 }
 
-a{
-  color: white;
-}
