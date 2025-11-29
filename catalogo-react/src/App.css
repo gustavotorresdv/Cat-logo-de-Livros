@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+  
 .app {
   min-height: 100vh;
   padding: 20px;
@@ -242,4 +242,20 @@ header h1 {
 
 .app.dark .counters {
   border-color: #5b4381;
+}
+
+.voltar-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 18px;
+  background: #6c5ce7;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.voltar-btn:hover {
+  background: #4e3fc4;
 }

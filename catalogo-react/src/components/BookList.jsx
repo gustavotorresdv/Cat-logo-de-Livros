@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function BookList({ books, onRemove }) {
   if (books.length === 0) return <p>Nenhum livro encontrado.</p>;
 
@@ -5,9 +7,10 @@ export default function BookList({ books, onRemove }) {
     <div className="book-list">
       {books.map(b => (
         <div className="book-item" key={b.id}>
-          <span>
+          <Link to={`/livro/${b.id}`}>
             • {b.title} — {b.author} ({b.year})
-          </span>
+          </Link>
+
           <button className="remove-btn" onClick={() => onRemove(b.id)}>
             Remover
           </button>
