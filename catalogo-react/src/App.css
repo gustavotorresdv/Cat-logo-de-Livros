@@ -1,42 +1,245 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app {
+  min-height: 100vh;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*se eu n botar os negocios separados eu fico maluco procurando essa merda pique 
+DGG Flowers*/
+/* TEMAS */
+
+
+/* Tema Claro — Azul de viado */
+.app.light {
+  background: #e7f0ff;
+  color: #0f1a2a;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Tema Escuro — Roxo escuro FODA PRA KRLLLLL */
+.app.dark {
+  background: #1a1026;
+  color: #f1eaff;
 }
 
-.card {
-  padding: 2em;
+
+/* HEADER */
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ccc;
 }
 
-.read-the-docs {
-  color: #888;
+header h1 {
+  font-size: 24px;
+}
+
+/* Botão de alternar tema */
+.theme-btn {
+  padding: 8px 16px;
+  background: #5c8dff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.theme-btn:hover {
+  background: #3d6aff;
+}
+
+.app.dark .theme-btn {
+  background: #7d4dff;
+}
+
+.app.dark .theme-btn:hover {
+  background: #6a3ee6;
+}
+
+
+/* BARRA DE BUSCA */
+
+
+.search {
+  margin-bottom: 25px;
+}
+
+.search label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.search input {
+  padding: 8px;
+  width: 280px;
+  border: 1px solid #bcd0ff;
+  background: #ffffff;
+  border-radius: 6px;
+  outline: none;
+}
+
+.app.dark .search input {
+  background: #2a1a3d;
+  color: #f1eaff;
+  border-color: #5b4381;
+}
+
+
+/* FORMULÁRIO DE NOVO LIVRO */
+
+
+.book-form {
+  margin-bottom: 25px;
+  padding: 15px;
+  border: 2px solid #bcd0ff;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.app.dark .book-form {
+  background: #2a1a3d;
+  border-color: #5b4381;
+}
+
+.book-form h3 {
+  margin-bottom: 10px;
+}
+
+.book-form input {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #bcd0ff;
+  border-radius: 6px;
+  background: #fff;
+}
+
+
+.app.dark .book-form input {
+  background: #1f1330;
+  color: #f1eaff;
+  border-color: #5b4381;
+}
+
+.book-form button {
+  padding: 8px 16px;
+  background: #28a745;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.book-form button:hover {
+  background: #218838;
+}
+
+
+/* LISTA DE LIVROS — ESTILOS BONITOS */
+
+
+.book-list {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Card do livro */
+.book-item {
+  background: #ffffff;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid #ccd9ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.25s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.app.dark .book-item {
+  background: #2a1a3d;
+  border-color: #5b4381;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.45);
+}
+
+
+.book-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.app.dark .book-item:hover {
+  box-shadow: 0 4px 12px rgba(180,120,255,0.35);
+}
+
+
+.book-info {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.book-author {
+  font-weight: normal;
+  color: #555;
+}
+
+.app.dark .book-author {
+  color: #c8b6ea;
+}
+
+.book-year {
+  font-size: 14px;
+  color: #777;
+}
+
+.app.dark .book-year {
+  color: #bba6e4;
+}
+
+
+.remove-btn {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+.remove-btn:hover {
+  background: #d93636;
+  transform: scale(1.05);
+}
+
+
+/* CONTADORES */
+
+
+.counters {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 2px solid #ccc;
+  font-size: 18px;
+}
+
+.app.dark .counters {
+  border-color: #5b4381;
 }

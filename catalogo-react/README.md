@@ -1,16 +1,40 @@
-# React + Vite
+Projeto Lista de Livros
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Funcionalidades
 
-Currently, two official plugins are available:
+-   Carregamento de livros via fetch a partir de books.json
+-   Filtro de busca por título ou autor (case-insensitive)
+-   Campo de busca com foco automático
+-   Tema claro/escuro usando Context API
+-   Persistência de tema e busca no localStorage
+-   Adição e remoção de livros
+-   Contadores atualizados em tempo real
+-   Mensagens de carregamento, erro e ausência de resultados
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Como Rodar
 
-## React Compiler
+1.  Executar: npm install
+2.  Iniciar o projeto: npm run dev
+3.  Acessar em: http://localhost:5173
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Estrutura do Projeto
 
-## Expanding the ESLint configuration
+-   src/components
+-   src/hooks
+-   src/context
+-   src/pages
+-   public/books.json
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Tecnologias
+
+-   React com Vite
+-   Context API
+-   Hooks personalizados
+-   CSS puro
+
+ Integrantes
+-   Arnaldo José Henriques de Souza - 01702248
+-   Gustavo Lopes Torres - 01655124
+-   Marcos Antônio Cruz Palmeira - 01688072
+-   Pedro Moreno Vieira - 01702265
+-   Sabrina Araújo de lemos - 01700691

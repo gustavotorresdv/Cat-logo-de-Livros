@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "title": "Clean Code",
+    "author": "Robert C. Martin"
+  },
+  {
+    "id": 2,
+    "title": "Dom Casmurro",
+    "author": "Machado de Assis"
+  }
+]
