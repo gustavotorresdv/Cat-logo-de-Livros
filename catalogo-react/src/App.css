@@ -176,6 +176,7 @@ header h1 {
   background: #2a1a3d;
   border-color: #5b4381;
   box-shadow: 0 2px 4px rgba(0,0,0,0.45);
+  color: red  ;
 }
 
 
@@ -258,4 +259,8 @@ header h1 {
 
 .voltar-btn:hover {
   background: #4e3fc4;
+}
+
+a{
+  color: white;
 }

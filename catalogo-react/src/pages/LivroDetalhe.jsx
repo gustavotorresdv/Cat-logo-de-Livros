@@ -21,8 +21,8 @@ export default function LivroDetalhe() {
       <p><strong>Ano:</strong> {book.year}</p>
 
       {/* Botão de voltar */}
-      <Link to="/catalogo" className="voltar-btn">
-        ⬅ Voltar ao Catálogo
+      <Link to="/" className="voltar-btn">
+         Voltar ao Catálogo
       </Link>
     </div>
   );
