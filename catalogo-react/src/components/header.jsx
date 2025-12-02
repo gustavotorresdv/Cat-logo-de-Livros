@@ -7,7 +7,7 @@ export default function Header() {
 
   return (
     <header className={`app-header ${theme}`}>
-      <Link to="/" style={{textDecoration: "none",color: "white"}}>
+      <Link to="/" style={{textDecoration: "none",color: "blue"}}>
        <h1>Catálogo de Livros</h1>
      </Link>
       <button className="theme-btn" onClick={toggleTheme}>
