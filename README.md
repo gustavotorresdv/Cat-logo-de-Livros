@@ -43,29 +43,29 @@ Rota dinâmica:
 
 Uso na página:
 
-const { id } = useParams();
+''const { id } = useParams();''
 
 ✔️ Navegação Programática
 
 Feita através de um hook customizado:
 
-navigate(`/livro/${id}`);
+''navigate(`/livro/${id}`);''
 
 ✔️ Hook Customizado
 
 Exemplo:
 
-import { useNavigate } from "react-router-dom";
+''import { useNavigate } from "react-router-dom";''
 
-export function useBookNavigation() {
+''export function useBookNavigation() {
   const navigate = useNavigate();
 
   function goToBook(id) {
     navigate(`/livro/${id}`);
-  }
+  }''
 
-  return { goToBook };
-}
+ ' return { goToBook };
+}'
 
 ✔️ Layout Reutilizável
 
