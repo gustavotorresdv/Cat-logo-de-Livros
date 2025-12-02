@@ -271,3 +271,26 @@ header h1 {
   background: #4e3fc4;
 }
 
+/*a porra do footer*/
+
+footer {
+  text-align: center;
+  padding: 18px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-weight: bold;
+  transition: background 0.3s, color 0.3s;
+}
+
+.app.light footer {
+  background: #5c8dff;
+  color: white;
+}
+
+
+.app.dark footer {
+  background: #7d4dff;
+  color: #f1eaff;
+}

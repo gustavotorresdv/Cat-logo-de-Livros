@@ -1,7 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 
-// Páginas
+import Home from "./pages/Home";
+//essa porra desse erro nao da dando erro tipo?????
 import Catalogo from "./pages/Catalogo";
 import LivroDetalhe from "./pages/LivroDetalhe";
 
@@ -9,8 +10,13 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<MainLayout />}>
-        <Route index element={<Catalogo />} />
+  
+        <Route index element={<Home />} />
+  
+        <Route path="catalogo" element={<Catalogo />} />
+
         <Route path="livro/:id" element={<LivroDetalhe />} />
+
       </Route>
     </Routes>
   );
