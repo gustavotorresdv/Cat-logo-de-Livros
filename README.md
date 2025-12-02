@@ -27,18 +27,18 @@ http://localhost:5173
 
 Arquivo: src/App.jsx
 
-<Routes>
+''<Routes>
   <Route path="/" element={<MainLayout />}>
     <Route index element={<Catalogo />} />
     <Route path="livro/:id" element={<LivroDetalhe />} />
   </Route>
-</Routes>
+</Routes>''
 
 ✔️ URLs Dinâmicas
 
 Rota dinâmica:
 
-<Route path="livro/:id" element={<LivroDetalhe />} />
+''<Route path="livro/:id" element={<LivroDetalhe />} />''
 
 
 Uso na página:
@@ -71,13 +71,13 @@ export function useBookNavigation() {
 
 Arquivo: src/layouts/MainLayout.jsx
 
-<div className={`app ${theme}`}>
+''<div className={`app ${theme}`}>
   <Header />
   <main>
     <Outlet />
   </main>
   <Footerss />
-</div>
+</div>''
 
 
 Esse layout envolve todas as páginas e reaproveita o mesmo Header e Footer.
